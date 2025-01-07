@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';  // Import router của bạn
+import router from './router'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
-  router,  // Đảm bảo router được khai báo ở đây
+  router, 
 }).$mount('#app');

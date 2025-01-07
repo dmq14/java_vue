@@ -1,25 +1,29 @@
 <template>
     <div>
         <h1>User List</h1>
-        <button @click="createUser">Add User</button>
-        <table border="1">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Actions</th>
-            </tr>
-            <tr v-for="user in users" :key="user.id">
-                <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.phone }}</td>
-                <td>
-                    <button @click="editUser(user)">Edit</button>
-                    <button @click="deleteUser(user.id)">Delete</button>
-                </td>
-            </tr>
+        <button class="btn btn-primary" @click="createUser">Add User</button>
+        <table class="table table-striped table-hover w-50">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="user in users" :key="user.id">
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.phone }}</td>
+                    <td>
+                        <button class="btn btn-info me-2" @click="editUser(user)"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="btn btn-danger" @click="deleteUser(user.id)"> <i class="fas fa-trash"></i> Delete</button>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>

@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:8081") // Kết nối với Vue.js
+@CrossOrigin(origins = "http://localhost:8081") 
 public class UserController {
     @Autowired
     private UserService userService;

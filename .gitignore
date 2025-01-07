@@ -1,32 +1,11 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+frontend_vue/node_modules/
+frontend_vue/dist/
+frontend_vue/.env
+frontend_vue/package-lock.json
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+backend/target/
+backend/.env
+backend/mvnw
+backend/mvnw.cmd
+backend/HELP.md
